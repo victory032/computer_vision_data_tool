@@ -1,2 +1,81 @@
-# computer_vision_data_tool
-Data Preparation Tool Kit for Computer Vision / AI
+# Data Preparation Tool Kit for Computer Vision / AI 
+
+
+###### Pyqt5, Opencv
+
+<img height="75" src="icons\opencv.png" width="60" title="opencv"/><img height="150" src="icons\logo2.png" width="150" title="logoo"/><img height="75" src="icons\pyqt5.png" width="75" title="logoo"/>
+
+
+A set of special tools to assist the data generation process for the AI model. A number of operations performed during the preparation of the data were collected in a single application. These operations are:
+* Resize
+* Crop
+* Increase brightness
+* Rotate
+* **Label**
+* Split as train and test randomly
+
+#### Dependencies
+opencv-python version(4.6.0)
+
+PyQt5     version(5.15.7)
+
+#### Installing
+`pip install -r requeriments.txt`
+
+### Overview to app
+![](https://github.com/hakanaktas1/computer_vision_data_tool/blob/main/gifs/first_1.gif)
+
+
+## Labeling Page
+Mouse events of the Pyqt5 library are used
+
+When the "save" button is clicked after the labeling process is completed,
+
+It creates a label file in ".xml" format with the same file path as the images and the same name as the image.
+
+![](https://github.com/hakanaktas1/computer_vision_data_tool/blob/main/gifs/labelqeqweqe.gif)
+
+
+## Home Page
+To create a new AI project file on the desktop, write the project name and click the "create" button.
+
+
+"images/train" and "images/train" paths are automatically created in the file.
+
+![](https://github.com/hakanaktas1/computer_vision_data_tool/blob/main/gifs/home_1.gif)
+
+
+## Resize Page
+
+All images in the dataset are resized according to the entered values
+
+!["adasd"](https://github.com/hakanaktas1/computer_vision_data_tool/blob/main/gifs/resize_1.gif)
+
+
+## Crop Page
+
+All images in the dataset are cropped according to the entered values
+
+!["adasd"](https://github.com/hakanaktas1/computer_vision_data_tool/blob/main/gifs/crop_1.gif)
+
+
+## Rotate Page
+
+All images in the dataset are increased brightness according to the entered values
+
+!["adasd"](https://github.com/hakanaktas1/computer_vision_data_tool/blob/main/gifs/rotate_1.gif)
+
+
+## Brightness Page
+
+All images in the dataset are increased brightness according to the entered values
+
+!["adasd"](https://github.com/hakanaktas1/computer_vision_data_tool/blob/main/gifs/brig_1.gif)
+
+## Split Page
+
+All data labeled with the entered rate value are randomly distributed in the train and test folders.
+
+Thanks to randomly distributed data, your model training will be more efficient.
+
+!["adasd"](C:\Users\Hakan\Desktop\hakanka\project3_exe\gifs\split.gif)
